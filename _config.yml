@@ -16,10 +16,10 @@ timezone: Europe/Warsaw
 
 title: Strona Brata # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Podróż w kierunku Homelab 2.0 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Strona z poradnikami brata.
+  Opis migracji na homelab 2.0.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
