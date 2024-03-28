@@ -14,7 +14,7 @@ timezone: Europe/Warsaw
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Strona Brata # the main title
+title: Strona brata # the main title
 
 tagline: Podróż w kierunku Homelab 2.0 # it will display as the sub-title
 
@@ -28,8 +28,8 @@ url: "https://brathaneq.github.io"
 github:
   username: brathaneq # change to your github username
 
-#twitter:
-#  username: twitter_username # change to your twitter username
+twitter:
+  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
@@ -53,7 +53,7 @@ google_analytics:
   id: # fill in your Google Analytics ID
 
 goatcounter:
-  id: # fill in your Goatcounter ID
+  id: brat # fill in your Goatcounter ID
 
 # Prefer color scheme setting.
 #

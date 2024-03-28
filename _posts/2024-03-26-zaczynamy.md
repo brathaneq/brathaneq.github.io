@@ -2,8 +2,8 @@
 title: Zaczynamy!
 author: brat
 date: 2024-03-26 15:00:00 +0000
-categories: [Homelab, Blog]
-tags: [hardware, software, unraid, ubuntu, truenas, proxmox]
+categories: [Blog, Homelab]
+tags: [hardware, software, unraid, ubuntu, truenas, proxmox, homelab, blog]
 render_with_liquid: false
 ---
 
