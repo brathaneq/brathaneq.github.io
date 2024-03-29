@@ -14,7 +14,7 @@ Witam wszystkich bardzo serdecznie i zapraszam do zapoznania się z moją dzisie
 Regularnie loguje się na moje usługi, żeby sprawdzić, czy nie ma np. jakichś aktualizacji, które można by zastosować, czy nie pojawiło się coś o czym powinienem wiedzieć. Ku mojemu wielkiemu zaskoczeniu, napotkałem błąd przy logowaniu. Wszystkie moje usługi, które są wystawione na "świat" są zabezpieczone [authentikiem](https://goauthentik.io/).  
 Po wpisaniu poprawnie loginu, hasła oraz przepisaniu kodu TOTP moim oczom pokazał się następujący komunikat:
 
-![Invalid token](/brathaneq.github.io/assets/img/2024-03-29/auth1.jpg) 
+![Invalid token](/assets/img/2024-03-29/auth1.jpg) 
 
 Przetestowałem klienta z telefonu, jak i kod wygenerowany z aplikacji w komputerze. 
 Wiedząc na jakiej zasadzie działają takie kody, pierwsza rzecz jaką zrobiłem, to sprawdzenie, czy czas w authentiku jest ustawiony poprawnie. Jako, że działa on w kontenerze wymagało to prostej komendy:
@@ -47,7 +47,7 @@ Po wklejeniu powyższego do pola adres w przeglądarce - przeniesieni będziemy 
 {: .prompt-warning }
 
 Stamtąd można wejść w ustawienia konta (kółko zębate w prawym górnym rogu ekranu) i w zakładce `MFA Devices` znaleźć starą pozycję TOTP Authenticator, zaznaczyć ją i skasować.
-![kasowanie TOTP](/brathaneq.github.io/assets/img/2024-03-29/auth2.jpg)
+![kasowanie TOTP](/assets/img/2024-03-29/auth2.jpg)
 
 Następnie klikamy na niebieski guzik "Enroll" i wybieramy z listy rozwijanej jaki rodzaj uwierzytelniania dwuskładnikowego chcemy dodać. Ja wybrałem najpierw **TOTP**, a potem dla pewności, dodałem również **WebAuth** i **Static Token**, żeby w przyszłości prościej sobie poradzić z takimi przygodami.  
 Po dodaniu 2FA do konta proponuję udać się do zakładki `Tokens and App passwords` i tam usunąć token dostępowy, który przed chwilą wygenerowaliśmy w linii poleceń.
