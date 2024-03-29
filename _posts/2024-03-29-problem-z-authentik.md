@@ -1,7 +1,7 @@
 ---
 title: Problem z Authentikiem.
 author: brat
-date: 2024-03-29 12:00:00 +0000
+date: 2024-03-29 11:00:00 +0000
 categories: [Blog, Docker]
 tags: [software, docker, authentik, recovery, homelab, blog, security]
 render_with_liquid: false
