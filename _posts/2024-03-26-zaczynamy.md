@@ -18,6 +18,6 @@ Dlaczego? Z kilku powodów:
 * może komuś przyda się **kolejny** poradnik dotyczący reverse proxy, plexa czy też innego nextclouda. Część poradników jest już nieaktualna, zmieniają się szaty graficzne, układ funkcji
 * usługi, które tutaj będę omawiał są dość standardowe i popularne, więc jak ktoś na Discordzie będzie szukał pomocy, łatwiej jest odesłać do swojego poradnika, niż po raz kolejny tłumaczyć od zera ;)
 
-W ciągu najbliższych kiulku tygodni będziecie mieli okazję śledzic moją walkę i przygody z homelabem w wersji 2.0.
+W ciągu najbliższych kilku tygodni będziecie mieli okazję śledzic moją walkę i przygody z homelabem w wersji 2.0.
 
 Do zobaczenia niedługo!
