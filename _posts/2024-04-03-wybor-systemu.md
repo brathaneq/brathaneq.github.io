@@ -1,7 +1,7 @@
 ---
 title: Wybór systemu.
 author: brat
-date: 2024-04-03 15:00:00 +0000
+date: 2024-04-03 00:00:00 +0000
 categories: [Blog]
 tags: [software, docker, os, home assistant, proxmox, truenas, backup]
 ---
@@ -46,6 +46,7 @@ W każdym z nich Serwer 3 zostaje na Ubuntu, więc nie będę go wymieniał za k
 * na Serwer 2 wrzucić OpenMediaVault i zobaczyć co to za wynalazek.
 * Dwa serwery Truenas.
 * Zamiast jednego serwera - zainwestować w backup w chmurze, np Back Blaze Personal lub któryś z dostępnych S3.
+* Użycie Xpenology
 
 Niedługo będę musiał podjąć decyzję. Jako, że jestem leniwy, nie będzie mi się chciało robić instalacji kilka razy, więc wybór jednego rozwiązania wcale nie jest taki prosty.
 
