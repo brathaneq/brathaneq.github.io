@@ -24,27 +24,41 @@ Do rozdysponowania mam 3 serwery, więc możliwości jest wiele. Która z nich j
 Do tej pory rozważałem:
 ### Wariant z Proxmoxem. 
 Na serwer główny (w tej dumnej roli Server 1) wrzucamy [Proxmoxa](https://www.proxmox.com/en/). Na nim mamy odpaloną naszą maszynę wirtualną + usługi w kontenerach LXC (a może na kolejnej wirtualce, pod kontrolą dockera?). Na serwerze 2 instalujemy Proxmox Backup Server. Natomiast Server 3 - do ustalenia, czy będzie to coś z rodziny Proxmox, czy czyste Ubuntu, udostępniające swoje dyski.
+#### Zalety
+* Dostępna duża ilość poradników, zarówno w formie video jak i opisowej
+* Rozwiązania problemów łatwe do znalezienia w necie
+* Duża elastyczność, zmiany robi się w VM'kach/kontenerach a nie w hypervisorze
 
-| Zalety | Wady |
-|:---:|:---:|
-| Dostępna duża ilość poradników, zarówno w formie video jak i opisowej | Nie znam dobrze proxmoxa, nawet proste rzeczy mogą zająć dużo czasu |
-| Rozwiązania problemów łatwe do znalezienia w necie | Instalowałbym pierwszy raz, więc może się okazać po czasie, że muszę coś instalować od nowa, bo np. coś można ustawić tylko w momencie instalacji |
-| Duża elastyczność, zmiany robi się w VM'kach/kontenerach a nie w hypervisorze |  |
+#### Wady
+* Nie znam dobrze proxmoxa, nawet proste rzeczy mogą zająć dużo czasu
+* Instalowałbym pierwszy raz, więc może się okazać po czasie, że muszę coś instalować od nowa, bo np. coś można ustawić tylko w momencie instalacji
 
 ### Wariant z migracją Home Assistanta do kontenera. 
 W takim wypadku można wszystko na Serwerze 1 postawić w dokerze pod kontrolą Ubuntu, dla "wygody" uruchomić portainer (choć w sumie nie jest to niezbędne, z moją znajomością dockera i jego CLI). Serwer 2 i 3 zostaną z Truenas i Ubuntu. 
+#### Zalety
+* Dostępna duża ilość poradników, zarówno w formie video jak i opisowej
+* Rozwiązania problemów łatwe do znalezienia w necie
+* Duża elastyczność, zmiany robi się w kontenerach a nie w systemie operacyjnym
 
-| Zalety | Wady |
-|:------:|:--------:|
-|<ul><li>Dostępna duża ilość poradników, zarówno w formie video jak i opisowej</li><li> Rozwiązania problemów łatwe do znalezienia w necie</li><li>Duża elastyczność, zmiany robi się w kontenerach a nie w systemie operacyjnym</li></ul>  |  <ul><li>Czytałem, że łączenie różnych usług/dodatków w Home Assistancie może być kłopotliwe</li><li>Brak systemowego rozwiązania do backup</li></ul>      |
+#### Wady
+* Czytałem, że łączenie różnych usług/dodatków w Home Assistancie może być kłopotliwe
+* Brak systemowego rozwiązania do backupu
 
 
 ### Wariant mieszany.
 W związku, że największe doświadczenie mam z systemem UnRaid i spełnia on moje wymagania, to zostaje on na Serwerze 1. Na Serwer 2 wrzucam natomiast Truenas Scale. Serwer 3 - zostaje bez zmian.
 
-| Zalety | Wady |
-|:------:|:--------:|
-|<ul><li>Mam największe doświadczenie z Unraid</li><li> Będę miał bezpieczeństwo zapewnione przez softraid w Unraid jak i ZFS w Truenasie</li><li>Użycie dwóch bardzo popularnych systemów zapewni wsparcie w razie problemów</li><li>Licencje na Unraid już posiadam</li></ul>  |  <ul><li>Brak systemowego rozwiązania backupów</li><li>Brak centralnego zarządzania usługami</li></ul> 
+#### Zalety
+* Mam największe doświadczenie z Unraid
+* Będę miał bezpieczeństwo zapewnione przez softraid w Unraid jak i ZFS w Truenasie
+* Użycie dwóch bardzo popularnych systemów zapewni wsparcie w razie problemów
+* Licencje na Unraid już posiadam
+
+#### Wady
+* Brak systemowego rozwiązania backupów
+* Brak centralnego zarządzania usługam
+
+
 
 ### Warianty które brałem pod uwagę, ale odrzuciłem.
 W każdym z nich Serwer 3 zostaje na Ubuntu, więc nie będę go wymieniał za każdym razem.
