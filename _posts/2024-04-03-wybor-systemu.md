@@ -26,8 +26,9 @@ Do tej pory rozważałem:
 Na serwer główny (w tej dumnej roli Server 1) wrzucamy [Proxmoxa](https://www.proxmox.com/en/). Na nim mamy odpaloną naszą maszynę wirtualną + usługi w kontenerach LXC (a może na kolejnej wirtualce, pod kontrolą dockera?). Na serwerze 2 instalujemy Proxmox Backup Server. Natomiast Server 3 - do ustalenia, czy będzie to coś z rodziny Proxmox, czy czyste Ubuntu, udostępniające swoje dyski.
 
 | Zalety | Wady |
-|:------:|:--------:|
-|Dostępna duża ilość poradników, zarówno w formie video jak i opisowej <br> Rozwiązania problemów łatwe do znalezienia w necie<br>Duża elastyczność, zmiany robi się w VM'kach/kontenerach a nie w hypervisorze | Nie znam dobrze proxmoxa, nawet proste rzeczy mogą zająć dużo czasu <br> Instalowałbym pierwszy raz, więc może się okazać po czasie, że muszę coś instalować od nowa, bo np. coś można ustawić tylko w momencie instalacji|
+|:---:|:---:|
+| Dostępna duża ilość poradników, zarówno w formie video jak i opisowej | Nie znam dobrze proxmoxa, nawet proste rzeczy mogą zająć dużo czasu |
+| Rozwiązania problemów łatwe do znalezienia w necieDuża elastyczność, zmiany robi się w VM'kach/kontenerach a nie w hypervisorze | Instalowałbym pierwszy raz, więc może się okazać po czasie, że muszę coś instalować od nowa, bo np. coś można ustawić tylko w momencie instalacji |
 
 ### Wariant z migracją Home Assistanta do kontenera. 
 W takim wypadku można wszystko na Serwerze 1 postawić w dokerze pod kontrolą Ubuntu, dla "wygody" uruchomić portainer (choć w sumie nie jest to niezbędne, z moją znajomością dockera i jego CLI). Serwer 2 i 3 zostaną z Truenas i Ubuntu. 
