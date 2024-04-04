@@ -27,7 +27,7 @@ Na serwer główny (w tej dumnej roli Server 1) wrzucamy [Proxmoxa](https://www.
 
 | Zalety | Wady |
 |:------:|:--------:|
-|  <ul><li>Dostępna duża ilość poradników, zarówno w formie video jak i opisowej</li><li> Rozwiązania problemów łatwe do znalezienia w necie</li><li>Duża elastyczność, zmiany robi się w VM'kach/kontenerach a nie w hypervisorze</li></ul>  |  <ul><li>Nie znam dobrze proxmoxa, nawet proste rzeczy mogą zająć dużo czasu</li><li>Instalowałbym pierwszy raz, więc może się okazać po czasie, że muszę coś instalować od nowa, bo np. coś można ustawić tylko w momencie instalacji</li></ul>      |
+|Dostępna duża ilość poradników, zarówno w formie video jak i opisowej <br> Rozwiązania problemów łatwe do znalezienia w necie<br>Duża elastyczność, zmiany robi się w VM'kach/kontenerach a nie w hypervisorze | Nie znam dobrze proxmoxa, nawet proste rzeczy mogą zająć dużo czasu <br> Instalowałbym pierwszy raz, więc może się okazać po czasie, że muszę coś instalować od nowa, bo np. coś można ustawić tylko w momencie instalacji|
 
 ### Wariant z migracją Home Assistanta do kontenera. 
 W takim wypadku można wszystko na Serwerze 1 postawić w dokerze pod kontrolą Ubuntu, dla "wygody" uruchomić portainer (choć w sumie nie jest to niezbędne, z moją znajomością dockera i jego CLI). Serwer 2 i 3 zostaną z Truenas i Ubuntu. 
