@@ -13,6 +13,7 @@ render_with_liquid: false
 Można powiedzieć, że wróciłem do punktu wyjścia. Kolejny raz rozważam, jaki system operacyjny lub jaka kombinacja systemów byłby najlepsza w mojej sytuacji. W swoim homelabie mam jeden skromny serwer wirtualny ([Home Assistant](https://www.home-assistant.io/)) plus około 30 kontenerów. Większość z nich jest używana na bieżąco, typu [Authentik](https://goauthentik.io/), [Vaultwarden](https://github.com/dani-garcia/vaultwarden), bazy danych; część włączam w razie potrzeby, np: [Code-server](https://github.com/coder/code-server), server minecraft z użyciem [Pterodactyla](https://pterodactyl.io/).
 
 Do rozdysponowania mam 3 serwery, więc możliwości jest wiele. Która z nich jest najlepsza? Nie wiem, dlatego też można poniższe wypociny potraktować jako notatnik, w którym staram się wytłumaczyć mój sposób myślenia. Dla przypomnienia - poniżej to, z czym pracujemy:
+
 |          |      CPU      |  RAM  |    Dyski    |
 |----------|:-------------:|:-----:|:-----------:|
 | Server 1 |    i3-6100    |  8 GB | 0,25 + 1 TB |
