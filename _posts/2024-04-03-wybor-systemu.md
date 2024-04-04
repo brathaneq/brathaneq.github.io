@@ -4,7 +4,10 @@ author: brat
 date: 2024-04-03 00:00:00 +0000
 categories: [Blog]
 tags: [software, docker, os, home assistant, proxmox, truenas, backup]
+render_with_liquid: false
 ---
+
+
 ## Jakie rozwiązanie warto zastosować?
 
 Można powiedzieć, że wróciłem do punktu wyjścia. Kolejny raz rozważam, jaki system operacyjny lub jaka kombinacja systemów byłby najlepsza w mojej sytuacji. W swoim homelabie mam jeden skromny serwer wirtualny ([Home Assistant](https://www.home-assistant.io/)) plus około 30 kontenerów. Większość z nich jest używana na bieżąco, typu [Authentik](https://goauthentik.io/), [Vaultwarden](https://github.com/dani-garcia/vaultwarden), bazy danych; część włączam w razie potrzeby, np: [Code-server](https://github.com/coder/code-server), server minecraft z użyciem [Pterodactyla](https://pterodactyl.io/).

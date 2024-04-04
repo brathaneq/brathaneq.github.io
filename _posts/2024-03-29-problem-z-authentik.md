@@ -7,7 +7,6 @@ tags: [software, docker, authentik, recovery, homelab, blog, security]
 render_with_liquid: false
 ---
 
-
 ## Problem z Authentikiem
 
 Witam wszystkich bardzo serdecznie i zapraszam do zapoznania się z moją dzisiejszą przygodą.  
