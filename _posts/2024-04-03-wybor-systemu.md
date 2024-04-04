@@ -22,7 +22,7 @@ Do rozdysponowania mam 3 serwery, więc możliwości jest wiele. Która z nich j
 
 Do tej pory rozważałem:
 ### Wariant z Proxmoxem. 
-Na serwer główny (w tej dumnej roli Server 1) wrzucamy [Proxmoxa]((https://www.proxmox.com/en/)). Na nim mamy odpaloną naszą maszynę wirtualną + usługi w kontenerach LXC (a może na kolejnej wirtualce, pod kontrolą dockera?). Na serwerze 2 instalujemy Proxmox Backup Server. Natomiast Server 3 - do ustalenia, czy będzie to coś z rodziny Proxmox, czy czyste Ubuntu, udostępniające swoje dyski.
+Na serwer główny (w tej dumnej roli Server 1) wrzucamy [Proxmoxa](https://www.proxmox.com/en/). Na nim mamy odpaloną naszą maszynę wirtualną + usługi w kontenerach LXC (a może na kolejnej wirtualce, pod kontrolą dockera?). Na serwerze 2 instalujemy Proxmox Backup Server. Natomiast Server 3 - do ustalenia, czy będzie to coś z rodziny Proxmox, czy czyste Ubuntu, udostępniające swoje dyski.
 
 | Zalety | Wady |
 |:------:|:--------:|
