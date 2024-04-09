@@ -1,7 +1,7 @@
 ---
 title: Pierwsze testy.
 author: brat
-date: 2024-04-09 10:00:00 +0000
+date: 2024-04-09 09:00:00 +0000
 categories: [Homelab]
 tags: [software, hardware, truenas, hp, server, ventoy]
 render_with_liquid: false
