@@ -31,7 +31,7 @@ W moim przypadku nie był to problem, bo system docelowo i TAK miał działać b
 ### Pierwsze logowanie
 
 Po wpisaniu wyżej wspomnianego adresu IP do przeglądarki oczom mym ukazał się ekran logowania.
-![Truenas login](/assets/2024-04-09/truenas-login.jpg).
+![Truenas login](/assets/img/2024-04-09/truenas-login.jpg).
 
 Nigdy wcześniej nie zapoznawałem się z poradnikami z Truenasa, więc trochę metodą prób i błędów zrobiłem swój pierwszy zasób z dysków i zapoznałem się z interfacem.
 Aktualnie sprawdzam pobór prądu, przy zerowym obciążeniu. Za kilka dni wrzucę trochę aplikacji i zobaczę jak system się zachowuje pod minimalnym obciążeniem. 
