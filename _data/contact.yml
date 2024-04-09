@@ -12,7 +12,7 @@
 
 - type: discord
   icon: 'fab fa-discord'
-#   url: 'https://l.technotim.live/discord'
+  url: 'https://discord.gg/j8vbJRkzVx'
 
 - type: rss
   icon: "fas fa-rss"
