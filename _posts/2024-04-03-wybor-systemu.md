@@ -2,7 +2,7 @@
 title: Wybór systemu.
 author: brat
 date: 2024-04-03 00:00:00 +0000
-categories: [Blog]
+categories: [Homelab]
 tags: [software, docker, os, home assistant, proxmox, truenas, backup]
 render_with_liquid: false
 ---
