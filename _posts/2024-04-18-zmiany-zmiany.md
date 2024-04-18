@@ -28,8 +28,8 @@ OK. Myślałem, że to nie jest duży problem, dlatego też odpaliłem tryb teks
 Ku memu niezadowoleniu, zmiana wersji nie rozwiązała problemu. System dalej nie chciał uruchomić instalatora. Nie miało znaczenia czy włączałem tryb graficzny, czy tryb tekstowy.
 Wujek Google podpowiedział, żeby dodać parametr `nomodeset` przy bootowaniu, szerzej problem opisany m.in. [tutaj](https://forum.proxmox.com/threads/proxmox-8-installer-freezes-at-boot.129341/). Po zalecanej modyfikacji – w końcu rozpoczął się proces instalacji. Kilka kliknięć później komputer restartował się już z gotowym systemem. 
 Oczywiście, byłoby nudno jakby zadziałało od razu…
-Komputer zatrzymywał się przy komunikacie „Loading initial ramdisk …” ![ekran błędu](https://img2023.cnblogs.com/blog/27422/202308/27422-20230830100726995-422618091.png)
-_zdjęcie poglądowe_
+Komputer zatrzymywał się przy komunikacie `Loading initial ramdisk …` ![ekran błędu](https://forum.proxmox.com/data/attachments/60/60296-02c41f1b730be1350f6ff2e3f4255926.jpg)
+_zdjęcie poglądowe z forum Proxmox_
 
 Mamrocąc pod nosem „stabilny, dopracowany” pomyślałem, że może to znowu problem z grafiką. Wyciągnąłem kartę z obudowy i po chwili od odpalenia – serwer pojawił się na liście podłączonych urządzeń na ruterze. Sprawdziłem z laptopa, czy mogę się zalogować na Proxmoxa, oczom moim ukazało się tak wyczekiwane okienko:
 
