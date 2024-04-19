@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki w Proxmox.
 author: brat
-date: 2024-04-19 01:00:00 +0000
+date: 2024-04-19 00:00:00 +0000
 categories: [Homelab]
 tags: [software, proxmox, authentik, traefik]
 render_with_liquid: false
