@@ -22,7 +22,7 @@ Pojawia się nam coś takiego:
 _konfiguracja TOTP_
 W polu `Description` wpisujemy opis, np informację jakiej aplikacji będziemy używać do generowania kodu. Możliwości jest wiele, [Authy](https://authy.com/), [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [MS Authenticator](https://www.microsoft.com/pl-pl/security/mobile-authenticator-app), ja natomiast użyję [Bitwardena](https://bitwarden.com/).
 Używając aplikacji mobilnej skanujemuy kod QR i dodajemy Proxmoxa do listy obsługiwanych kont/aplikacji. Alternatywnie - można skopiować zawartość pola `Secret` i wkleić go w odpowiednie pole w aplikacji obsługującej TOTP. Rezultat będzie identyczny - aplikacja będzie generowała co 30 sekund sześciocyfrowy kod. W polu `Verify Code` wpisujemy nasz jednorazowy kod. Po kliknięciu 'Add' mamy sukces!
-![TOTP Sukces](assets/img/2024-04-19/2fa-3.jpg)
+![TOTP Sukces](/assets/img/2024-04-19/2fa-3.jpg)
 
 Od tej pory każde logowanie użytkownika będzie wymagało dodatkowego potwierdzenia!
 Skoro już jesteśmy w konfiguracji dostępu - wygenerujmy kody tzw. recovery, których można użyć w przypadku problemów z wygenerowaniem kodu TOTP (np. utrata telefonu). Klikamy ponownie w `Add` i wybieramy _Recovery Keys_. Po wybraniu użytkownika klikamy `Add`. Pojawi się lista kodów podobna jak na obrazie poniżej:
@@ -95,7 +95,7 @@ Po restarcie i odświeżeniu okna w przeglądarce, której używamy do logowania
 
 ### Wyłączenie komunikatu o braku subskrypcji
 Jeżeli nie mamy wykupionej [płatnej subskrypcji](https://www.proxmox.com/en/proxmox-virtual-environment/pricing) dającej dostęp do repozytoriów Enterprise - przy każdym logowaniu będzie nam się pojawiało okienko z komunikatem:
-![subscription alert](/assets/imng/2024-04-19/subscription.jpg)
+![subscription alert](/assets/img/2024-04-19/subscription.jpg)
 Niby to tylko jedno kliknięcie, ale po jakimś czasie zaczyna to drażnic. Dlatego też - szybko postaramy się to wyłączyć.
 Klikamy na nasz node (w naszym przypadku `pve`) i wybieramy `Shell`.
 Tam wpisujemy jedną komendę:
