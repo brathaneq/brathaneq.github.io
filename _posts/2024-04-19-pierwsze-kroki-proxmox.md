@@ -46,14 +46,7 @@ _Źródło: https://github.com/CarmineCodes/Proxmox-No-Subscription-No-Problem_
 Teraz przy aktualizacji aplikacji i systemu nie powinny nam się pojawiać błędy/ostrzeżenia.
 
 ### Aktualizacja systemu z wersji 7 do wersji 8
-Wcześniejszy krok zaczął nas przygotowywać do aktualizacji systemu, ponieważ będzie trzeba pościągać sporą ilość danoch z nowych repozytoriów. Na szczęście cała procedura jest bardzo dokładnie opisana [tutaj](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8), można znaleźć też na Youtube filmy, gdzie krok po kroku pokazana jest ta aktualizacja.
-
-{% include embed/youtube.html id='i5cmx-mcUVA' %}
-
-{% include embed/youtube.html id='F8iOU1ci19Q' %}
-📺 [Watch Video](https://www.youtube.com/watch?v=F8iOU1ci19Q)
-
-
+Wcześniejszy krok zaczął nas przygotowywać do aktualizacji systemu, ponieważ będzie trzeba pościągać sporą ilość danoch z nowych repozytoriów. Na szczęście cała procedura jest bardzo dokładnie opisana [tutaj](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8), można znaleźć też na Youtube [filmy](https://www.youtube.com/watch?v=i5cmx-mcUVA), gdzie krok po kroku pokazana jest ta aktualizacja.
 
 > Zanim zaczniemy cokolwiek robić na serwerze - musimy się z nim połączyć przez SSH, lub zalogować się lokalnie z konsoli (klawiatura + monitor). Nie można stosować wbudowanego w GUI terminala, ponieważ połączenie zostanie zerwane w trakcie aktualizacji. A tego byśmy nie chcieli.
 {: .prompt-warning }
