@@ -13,7 +13,7 @@ Mamy już działający serwer z Proxmoxem, poniżej kilka pierwszych kroków kt�
 
 ### Zabezpieczanie logowania
 Dobrą praktyką jest jak najszybsze zabezpieczenie konta używanego do logowania się do serwera.
-Klikamy `Datacenter --> Permissions` i po rozwinięciu listy wybieramy TOTP..
+Klikamy `Datacenter --> Permissions` i po rozwinięciu listy wybieramy Two Factor.
 ![Persmissions](/assets/img/2024-04-19/2fa-1.jpg)
 _wybór okna TOTP_
 Następnie wybieramy _TOTP_ z listy rozwijanej, która pojawia się po naciśnięciu `Add`.
@@ -39,13 +39,17 @@ _Źródło: https://github.com/CarmineCodes/Proxmox-No-Subscription-No-Problem_
 
 Wybieramy repozytorium z dolnej listy (Enterprise) i klikamy na `Disable`.
 Następnie klikamy `Add` i z listy rozwijanej wybieramy No Subscription.
-![dodawanie rpozytorium](https://user-images.githubusercontent.com/63487881/203459229-88135996-491b-4ccc-97a2-aa10d2becb5c.png)
+
+![dodawanie repozytorium](https://user-images.githubusercontent.com/63487881/203459229-88135996-491b-4ccc-97a2-aa10d2becb5c.png)
 _Źródło: https://github.com/CarmineCodes/Proxmox-No-Subscription-No-Problem_
 
 Teraz przy aktualizacji aplikacji i systemu nie powinny nam się pojawiać błędy/ostrzeżenia.
 
 ### Aktualizacja systemu z wersji 7 do wersji 8
-Wcześniejszy krok zaczął nas przygotowywać do aktualizacji systemu, ponieważ będzie trzeba pościągać sporą ilość danoch z nowych repozytoriów. Na szczęście cała procedura jest bardzo dokładnie opisana [tutaj](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8), można znaleźć też na Youtube filmy, gdzie krok po kroku pokazana jest ta aktualizacja. {% include embed/youtube.html id='i5cmx-mcUVA' %}
+Wcześniejszy krok zaczął nas przygotowywać do aktualizacji systemu, ponieważ będzie trzeba pościągać sporą ilość danoch z nowych repozytoriów. Na szczęście cała procedura jest bardzo dokładnie opisana [tutaj](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8), można znaleźć też na Youtube filmy, gdzie krok po kroku pokazana jest ta aktualizacja.
+
+{% include embed/youtube.html id='i5cmx-mcUVA' %}
+
 > Zanim zaczniemy cokolwiek robić na serwerze - musimy się z nim połączyć przez SSH, lub zalogować się lokalnie z konsoli (klawiatura + monitor). Nie można stosować wbudowanego w GUI terminala, ponieważ połączenie zostanie zerwane w trakcie aktualizacji. A tego byśmy nie chcieli.
 {: .prompt-warning }
 
@@ -78,11 +82,11 @@ cat /etc/apt/sources.list.d/pve-enterprise.list
 cat /etc/apt/sources.list
 ```
 >zwracam uwagę, że pve-enterprise.list powinno być poprzedzone znakiem # bo zostało ono wyłączone we wcześniejszych krokach.
-{ .prompt-info }
+{: .prompt-info }
 
 #### Dość przygotowań, zmieńmy w końcu 7 na 8!
 >Przypominam, że poniższych komend NIE możemy wykonywać na terminalu wbudowanym w GUI proxmoxa!
-{ .prompt-warning }
+{: .prompt-warning }
 Wszystko jest gotowe, więc wydajemy po kolei komendy:
 ```bash
 apt update
