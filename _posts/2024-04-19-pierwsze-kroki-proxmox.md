@@ -50,6 +50,11 @@ Wcześniejszy krok zaczął nas przygotowywać do aktualizacji systemu, poniewa�
 
 {% include embed/youtube.html id='i5cmx-mcUVA' %}
 
+{% include embed/youtube.html id='F8iOU1ci19Q' %}
+📺 [Watch Video](https://www.youtube.com/watch?v=F8iOU1ci19Q)
+
+
+
 > Zanim zaczniemy cokolwiek robić na serwerze - musimy się z nim połączyć przez SSH, lub zalogować się lokalnie z konsoli (klawiatura + monitor). Nie można stosować wbudowanego w GUI terminala, ponieważ połączenie zostanie zerwane w trakcie aktualizacji. A tego byśmy nie chcieli.
 {: .prompt-warning }
 
@@ -81,7 +86,7 @@ w filmiku na Youtube, który jest wstawiony wyżej, autor weryfikuje poprawnoś�
 cat /etc/apt/sources.list.d/pve-enterprise.list
 cat /etc/apt/sources.list
 ```
->zwracam uwagę, że pve-enterprise.list powinno być poprzedzone znakiem # bo zostało ono wyłączone we wcześniejszych krokach.
+>Zwracam uwagę, że pve-enterprise.list powinno być poprzedzone znakiem # bo zostało ono wyłączone we wcześniejszych krokach.
 {: .prompt-info }
 
 #### Dość przygotowań, zmieńmy w końcu 7 na 8!
@@ -103,6 +108,7 @@ Jeżeli nie mamy wykupionej [płatnej subskrypcji](https://www.proxmox.com/en/pr
 Niby to tylko jedno kliknięcie, ale po jakimś czasie zaczyna to drażnic. Dlatego też - szybko postaramy się to wyłączyć.
 Klikamy na nasz node (w naszym przypadku `pve`) i wybieramy `Shell`.
 Tam wpisujemy jedną komendę:
+
 ```bash
 sed -Ezi.bak "s/(Ext.Msg.show\(\{\s+title: gettext\('No valid sub)/void\(\{ \/\/\1/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
 ```
