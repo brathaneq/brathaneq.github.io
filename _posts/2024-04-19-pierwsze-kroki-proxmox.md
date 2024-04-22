@@ -3,7 +3,7 @@ title: Pierwsze kroki w Proxmox.
 author: brat
 date: 2024-04-19 00:00:00 +0000
 categories: [Homelab]
-tags: [software, proxmox, authentik, traefik]
+tags: [software, proxmox, github]
 render_with_liquid: false
 ---
 ## Pierwsze kroki z Proxmox.
@@ -111,5 +111,5 @@ W zależności od konfiguracji przeglądarki powinno się wyczyścić cache, zam
 Szukając informacji dot. konfiguracji dobrzy ludzie z Discorda (dzięki @michal_32) podpowiedzieli mi użycie skryptów ze Strony [Helper Scripts](https://tteck.github.io/Proxmox/). Jest to zbiór skryptów na każdą okazję, warto się z nimi zapoznać, mogą usprawnić naprawdę wiele czynności. Jednym ze skryptów jest Post Install w kategorii `Proxmox VE Tools`. Robi w sumie wszystko to co opisałem wyżej, tylko automagicznie i z minimalnym nakładem pracy użytkownika.
 
 ## Co dalej?
-Wiele rzeczy przed nami, w ciągu kilku następnych dni powinnny się pojawić kolejne wskazówki co robimy na początku pracy na Proxmoxie. Włączanie grup IOMMU, zakładanie użytkowników (w nieoczywisty sposób), uruchamianie pierwszych konteneró LXC i wiele wiecej. 
+Wiele rzeczy przed nami, w ciągu kilku następnych dni powinnny się pojawić kolejne wskazówki co robimy na początku pracy na Proxmoxie. Włączanie grup IOMMU, zakładanie użytkowników (w nieoczywisty sposób), uruchamianie pierwszych kontenerów LXC i wiele wiecej. 
 Zapraszam niedługo!
