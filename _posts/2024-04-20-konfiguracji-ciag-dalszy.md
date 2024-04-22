@@ -3,7 +3,7 @@ title: Dalsza konfiguracja Proxmoxa
 author: brat
 date: 2024-04-20 00:00:00 +0000
 categories: [Homelab]
-tags: [software, proxmox, authentik, traefik]
+tags: [software, proxmox, authentik, ubuntu]
 render_with_liquid: false
 ---
 ## Kolejne kroki
@@ -21,7 +21,7 @@ Zacznijmy od zmiany, która ochroni nasze oczy ;) Zmiana wyglądu systemu z jasn
 Zrobione! 
 
 ### Konfiguracja nowego użytkownika (with a twist!)
-Na początku chciałem opisać sposób skonfigurowania domeny (na bazie cloudflare) oraz późniejsze dopisanie nasezgo serwera do Traefika (Reverse proxy). Niestety, o ile konfiguracja domeny jest względnie uniwersalna, to konfiguracja reverse proxy już jest ciut bardziej zależna od aktualnej konfiguracji, więc musze założyć, że jak ktoś ma już traefik skonfigurowany to wie jak dodać do niego kolejną usługę. Ale skoro jesteśmy już przy wystawieniu naszego serwera na świat, to należy pamiętać, żeby robić to w sposób jak najbardziej bezpieczny. Do naszych celó użyjemy [Authentika](https://goauthentik.io/). Mamy do wyboru 2 opcje:
+Na początku chciałem opisać sposób skonfigurowania domeny (na bazie cloudflare) oraz późniejsze dopisanie nasezgo serwera do Traefika (Reverse proxy). Niestety, o ile konfiguracja domeny jest względnie uniwersalna, to konfiguracja reverse proxy już jest ciut bardziej zależna od aktualnej konfiguracji, więc musze założyć, że jak ktoś ma już traefik skonfigurowany to wie jak dodać do niego kolejną usługę. Ale skoro jesteśmy już przy wystawieniu naszego serwera na świat, to należy pamiętać, żeby robić to w sposób jak najbardziej bezpieczny. Do naszych celów użyjemy [Authentika](https://goauthentik.io/). Mamy do wyboru 2 opcje:
 * użyć Authentika jako bramy dostępowej do Proxmoxa.
 * użyć wbudowanej w Proxmoxa usługi OpenID
 
@@ -51,7 +51,7 @@ Po zatwierdzeniu Providera - klikamy w jego nazwę i sprawdzamy co znajduje się
 Następnie wybieramy `Aplications -> Aplications` i klikamy `Create`.
 Uzupełniamy pola `Name` i `Slug`, z listy `Providers` wybieramy Providera którego zrobiliśmy we wcześniejszym kroku. Po rozwinięciu opcji `UI Settings` uzupełniamy pole `Launch URL` pełnym adresem internetowym Proxmoxa (tutaj już z / na końcu).
 
-#### Krok 3 - konfigurujemy Proxmoxa
+##### Krok 3 - konfigurujemy Proxmoxa
 Przechodzimy do `Datacenter -> Permissions -> Realms` i po kliknięciu w `Add` wybieramy OpenID Connect Server.
 Wypełniamy jak niżej, z zastrzeżeniem, że `authentik.company` zmieniamy na nasz adres internetowy Authentika.
 ![Proxmox-realm](https://docs.goauthentik.io/assets/images/proxmox-source-7a3928943e502407ff132fb872f9be48.png)
@@ -64,7 +64,7 @@ Po jej wybraniu będziemy mieli możliwość przekierowania procesu logowania na
 Przechodzimy procedurę uwierzytelniania w Authentik i sukces!
 ![brat@authentik](/assets/img/2024-04-20/brat-auth.jpg)
 
-#### Bonus: Krok 4 - nadanie uprawnień
+##### Bonus: Krok 4 - nadanie uprawnień
 Logujemy się na konto administratora (zmieniając `Realm` na `Linux PAM standard authentication)` i klikamy w `Permissions` z menu po lewej stronie. Tam wybieramy `Add` i `User Permission` i wypełniamy następująco:
 * Path - wpisujemy `/`
 * User - wybieramy nasze konto z authentika
@@ -82,7 +82,7 @@ nano /etc/default/grub
 ```
 znajdujemy linijkę 
 
-```
+```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 ```
 
@@ -100,10 +100,11 @@ update-grub
 
 Po restarcie (komenda `reboot` albo wyklikane w GUI) powinniśmy mieć większy dostęp do sprzętu i mieć możliwość łatwiejszego przekazywania go do maszyn wirtualnych.
 
-### Pierwsza Maszyna wirtualna
+### Pierwsza Maszyna Wirtualna
 OK, czas na pierwszą maszynę wirtualną (w końcu!). Na pierwszy ogień pójdzie Ubuntu 22.04.4 LTS w wersji Server. 
 Przekopujemy się przez menu jak na obrazie poniżej:
 ![ISO upload](/assets/img/2024-04-20/iso-image.jpg)
+
 Tutaj mamy do wyboru dwie możliwości:
 * wrzucić plik ISO, który mamy juz ściągnięty na nasz komputer,
 * rozkazać serwerowi na ściągnięcie pliku ISO, który znajduje się w Internecie. 
@@ -124,6 +125,7 @@ Jak plik ISO już będzie na serwerze - klikamy `Create VM` w prawym górnym rog
 * Graphic Card - zostawiamy na Default
 * Machine - zmieniamy na Q35
 * Bios - zostaje Seafile
+
 #### Discs
 Ustawimy jeden Dysk, z interfacem SATA, o pojemności 64GiB.
 
