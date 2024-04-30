@@ -9,7 +9,7 @@ render_with_liquid: false
 ## Czas na kontenery!
 
 Cześć!
-Niedawno pojawiłą się informacja o wypuszczeniu nowej wersji Ubuntu - 24.04 Noble Numbat. Po aktualizacji pomyślałem, że to dobry moment, żeby zacząć w końcu z niej korzystać. Dlatego też w dzisiejszym wpisie opiszemy instalację dockera na systemie Ubuntu.
+Niedawno pojawiła się informacja o wypuszczeniu nowej wersji Ubuntu - 24.04 Noble Numbat. Po aktualizacji pomyślałem, że to dobry moment, żeby zacząć w końcu z niej korzystać. Dlatego też w dzisiejszym wpisie opiszemy instalację dockera na systemie Ubuntu.
 
 
 ### Instalacja
@@ -36,21 +36,21 @@ sudo apt-get update
 ```
 
 #### Instalujemy najnowszą wersję dockera.
-System jest już przygotowowany do instalacji, więc przed nami kolejne kroki:
+System jest już przygotowany do instalacji, więc przed nami kolejne kroki:
 
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 {: .nolineno }
 
-#### Sprawdzmy która wersja jest zainstalowana.
+#### Sprawdźmy która wersja jest zainstalowana.
 
 ```bash
 docker -v
 ```
 {: .nolineno }
 
-#### Sprawdzmy czy compose jest zainstalowane poprawnie.
+#### Sprawdźmy czy compose jest zainstalowane poprawnie.
 
 ```bash
 docker compose
@@ -64,7 +64,7 @@ docker compose
 ```
 {: .nolineno }
 
-Jeżeli powyższe uruchomi się bez błędów - gratulacje, masz w pełni działajacego dockera!
+Jeżeli powyższe uruchomi się bez błędów - gratulacje, masz w pełni działającego dockera!
 
 ### Używanie dockera bez komendy sudo
 Niedługo będziemy sporo używali komendy docker, która wymaga uprawnień root. Żeby ułatwić sobie życie - skonfigurujmy system tak, żeby nie trzeba było za każdym razem wpisywać "sudo" przed komendami. 
