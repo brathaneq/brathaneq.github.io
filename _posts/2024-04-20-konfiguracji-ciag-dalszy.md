@@ -21,7 +21,7 @@ Zacznijmy od zmiany, która ochroni nasze oczy ;) Zmiana wyglądu systemu z jasn
 Zrobione! 
 
 ### Konfiguracja nowego użytkownika (with a twist!)
-Na początku chciałem opisać sposób skonfigurowania domeny (na bazie cloudflare) oraz późniejsze dopisanie nasezgo serwera do Traefika (Reverse proxy). Niestety, o ile konfiguracja domeny jest względnie uniwersalna, to konfiguracja reverse proxy już jest ciut bardziej zależna od aktualnej konfiguracji, więc musze założyć, że jak ktoś ma już traefik skonfigurowany to wie jak dodać do niego kolejną usługę. Ale skoro jesteśmy już przy wystawieniu naszego serwera na świat, to należy pamiętać, żeby robić to w sposób jak najbardziej bezpieczny. Do naszych celów użyjemy [Authentika](https://goauthentik.io/). Mamy do wyboru 2 opcje:
+Na początku chciałem opisać sposób skonfigurowania domeny (na bazie cloudflare) oraz późniejsze dopisanie naszego serwera do Traefika (Reverse proxy). Niestety, o ile konfiguracja domeny jest względnie uniwersalna, to konfiguracja reverse proxy już jest ciut bardziej zależna od aktualnej konfiguracji, więc musze założyć, że jak ktoś ma już traefik skonfigurowany to wie jak dodać do niego kolejną usługę. Ale skoro jesteśmy już przy wystawieniu naszego serwera na świat, to należy pamiętać, żeby robić to w sposób jak najbardziej bezpieczny. Do naszych celów użyjemy [Authentika](https://goauthentik.io/). Mamy do wyboru 2 opcje:
 * użyć Authentika jako bramy dostępowej do Proxmoxa.
 * użyć wbudowanej w Proxmoxa usługi OpenID
 
@@ -85,12 +85,13 @@ znajdujemy linijkę
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 ```
-
+{: file="/etc/default/grub" }
 Jako, że nasz komputer jest wyposażony w procesor Intela modyfikujemy tą linijkę w sposób następujący:
 
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
 ```
+{: file="/etc/default/grub" }
 
 po zmianie - wydajemy polecenie:
 
