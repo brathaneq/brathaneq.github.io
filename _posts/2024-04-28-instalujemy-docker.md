@@ -43,14 +43,14 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 {: .nolineno }
 
-#### Sprawdźmy która wersja jest zainstalowana.
+#### Sprawdźmy, która wersja jest zainstalowana.
 
 ```bash
 docker -v
 ```
 {: .nolineno }
 
-#### Sprawdźmy czy compose jest zainstalowane poprawnie.
+#### Sprawdźmy, czy compose jest zainstalowane poprawnie.
 
 ```bash
 docker compose
