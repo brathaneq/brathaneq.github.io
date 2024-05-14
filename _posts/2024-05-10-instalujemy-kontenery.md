@@ -1,7 +1,7 @@
 ---
 title: Instalujemy VS Code
 author: brat
-date: 2024-05-15 00:00:00 +0000
+date: 2024-05-10 00:00:00 +0000
 categories: [Homelab]
 tags: [software, proxmox, ubuntu, docker, vscode, traefik, authentik, crowdsec, vaultwarden, cloudflare]
 render_with_liquid: false
