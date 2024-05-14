@@ -88,7 +88,7 @@ Na ekranie powinna się pojawić prośba o wpisanie hasła:
 ##### Instalacja rozszerzeń
 Na początku pracy, dla naszej wygody, zainstalujemy kilka rozszerzeń. Żeby to zrobić - wybieramy ikonę rozszerzeń z menu znajdującego się po lewej stronie, lub używamy skrótu klawiszowego `Ctrl+Shift+X) i używamy pola wyszukiwania, które się pojawi.
 Interesuje nas m.in:
-* [Markdown All in One] (https://open-vsx.org/extension/yzhang/markdown-all-in-one) - dodatek pomagający pisać kod w języku Markdown
+* [Markdown All in One](https://open-vsx.org/extension/yzhang/markdown-all-in-one) - dodatek pomagający pisać kod w języku Markdown
 * [YAML](https://open-vsx.org/extension/redhat/vscode-yaml) - jak wyżej, tylko pomaga w kodowaniu z użyciem yaml
 *  [VSCode Great Icons](https://open-vsx.org/extension/emmanuelbeziat/vscode-great-icons) - dodatek dodający czytelne ikony przy plikach. 
 *  [SSH FS](https://open-vsx.org/extension/Kelvin/vscode-sshfs) - dodatek pozwalający na zdalną modyfikację plików oraz uruchamianie terminalu na zdalnym serwerze.
