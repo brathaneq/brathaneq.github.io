@@ -11,7 +11,7 @@ render_with_liquid: false
 Cześć!
 Mamy na naszym serwerze zainstalowany już docker, czas rozpocząć wrzucać pierwsze kontenery z usługami. Będziemy je "migrować" z mojego aktualnego serwera, ale na potrzeby tego bloga, zamiast odzyskiwać konfiguracje, będziemy wszystko konfigurować od zera, i jeżeli tylko będzie taka możliwość, wrzucimy konfigurację na [githuba](https://github.com/brathaneq/docker).
 
-### Code Server
+### VS code
 Zaczniemy nietypowo, bo od Visual Studio Code. Jest to edytor kodu, który obsługujemy przez przeglądarkę internetową. Edytor obsługuje wiele dodatków, np. sprawdzających składnię m.in.  w plikach yaml, markdown. Ma wewnętrzną obsługę Git, połączeń SSH. Moglibyśmy oczywiście pominąć ten krok i korzystać z wbudowanego edytora tekstu, np nano. Sam lubię go używać do prostych i szybkich zmian, jednak przy pracy która nas czeka - warto zainwestować dodatkową chwilę i zainstalować VS Code.
 
 #### Różne możliwości instalacji, w naszym przypadku docker
@@ -87,7 +87,7 @@ Na ekranie powinna się pojawić prosba o wpisanie hasła:
 #### Instalacja rozszerzeń
 Na początku pracy, dla naszej wygody, zainstalujemy kilka rozszerzeń. Żeby to zrobić - wybieramy ikonę rozszerzeń z menu znajdującego się po lewej stronie, lub używamy skrótu klawiszowego `Ctrl+Shift+X) i używamy pola wyszukiwania które się pojawi.
 Interesuje nas m.in:
-* [Markdown All in One] (https://open-vsx.org/extension/yzhang/markdown-all-in-one) - dodatek pomagający pisać kod w języku Markdown
+* [Markdown All in One](https://open-vsx.org/extension/yzhang/markdown-all-in-one) - dodatek pomagający pisać kod w języku Markdown
 * [YAML](https://open-vsx.org/extension/redhat/vscode-yaml) - jak wyżej, tylko pomaga w kodowaniu z użyciem yaml
 *  [VSCode Great Icons](https://open-vsx.org/extension/emmanuelbeziat/vscode-great-icons) - dodatek dodający czytelne ikony przy plikach. 
 *  [SSH FS](https://open-vsx.org/extension/Kelvin/vscode-sshfs) - dodatek pozwalający na zdalną modyfikację plików oraz uruchamianie terminalu na zdalnym serwerze.
@@ -110,6 +110,8 @@ Dodatkowo - po najechaniu na połączenie - mamy opcję `Add as a Workspace fold
 W ten sposób przy użyciu jednego narzędzia możemy:
 - modyfikować pliki konfiguracyjne na kilku serwerach jednocześnie
 - zdalnie zarządzać przez ssh serwerami
-- 
+
+### Uptime Kuma
+
 
 
